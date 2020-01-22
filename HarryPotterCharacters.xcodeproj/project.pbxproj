@@ -12,6 +12,13 @@
 		658C1DF223D8F1F90079B175 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 658C1DF023D8F1F90079B175 /* Main.storyboard */; };
 		658C1DF423D8F1FC0079B175 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 658C1DF323D8F1FC0079B175 /* Assets.xcassets */; };
 		658C1DF723D8F1FC0079B175 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 658C1DF523D8F1FC0079B175 /* LaunchScreen.storyboard */; };
+		658C1E0523D8F2EB0079B175 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C1E0423D8F2EB0079B175 /* Character.swift */; };
+		658C1E0723D8F3C90079B175 /* CharacterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C1E0623D8F3C90079B175 /* CharacterController.swift */; };
+		658C1E0A23D8F4180079B175 /* CharacterStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C1E0923D8F4180079B175 /* CharacterStorage.swift */; };
+		658C1E0C23D8F46F0079B175 /* JSONRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C1E0B23D8F46F0079B175 /* JSONRepository.swift */; };
+		658C1E1023D8FB450079B175 /* HarryPotterCharactersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C1E0F23D8FB450079B175 /* HarryPotterCharactersService.swift */; };
+		658C1E1223D8FB4F0079B175 /* URLSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C1E1123D8FB4F0079B175 /* URLSessionManager.swift */; };
+		658C1E1423D8FB5B0079B175 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C1E1323D8FB5B0079B175 /* NetworkError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +29,13 @@
 		658C1DF323D8F1FC0079B175 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		658C1DF623D8F1FC0079B175 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		658C1DF823D8F1FC0079B175 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		658C1E0423D8F2EB0079B175 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		658C1E0623D8F3C90079B175 /* CharacterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterController.swift; sourceTree = "<group>"; };
+		658C1E0923D8F4180079B175 /* CharacterStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterStorage.swift; sourceTree = "<group>"; };
+		658C1E0B23D8F46F0079B175 /* JSONRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONRepository.swift; sourceTree = "<group>"; };
+		658C1E0F23D8FB450079B175 /* HarryPotterCharactersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarryPotterCharactersService.swift; sourceTree = "<group>"; };
+		658C1E1123D8FB4F0079B175 /* URLSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionManager.swift; sourceTree = "<group>"; };
+		658C1E1323D8FB5B0079B175 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +68,10 @@
 		658C1DE923D8F1F90079B175 /* HarryPotterCharacters */ = {
 			isa = PBXGroup;
 			children = (
+				658C1E0D23D8FB280079B175 /* Services */,
 				658C1DFF23D8F2040079B175 /* Model */,
 				658C1E0123D8F20A0079B175 /* Controllers */,
+				658C1E0823D8F3FD0079B175 /* Storage */,
 				658C1E0023D8F2070079B175 /* Views */,
 				658C1DFE23D8F2000079B175 /* Resources */,
 			);
@@ -77,6 +93,7 @@
 		658C1DFF23D8F2040079B175 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				658C1E0423D8F2EB0079B175 /* Character.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -108,8 +125,36 @@
 		658C1E0323D8F2150079B175 /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				658C1E0623D8F3C90079B175 /* CharacterController.swift */,
 			);
 			path = "Model Controllers";
+			sourceTree = "<group>";
+		};
+		658C1E0823D8F3FD0079B175 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+				658C1E0923D8F4180079B175 /* CharacterStorage.swift */,
+				658C1E0B23D8F46F0079B175 /* JSONRepository.swift */,
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+		658C1E0D23D8FB280079B175 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				658C1E1123D8FB4F0079B175 /* URLSessionManager.swift */,
+				658C1E1323D8FB5B0079B175 /* NetworkError.swift */,
+				658C1E0E23D8FB2B0079B175 /* HarryPotterCharacters */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		658C1E0E23D8FB2B0079B175 /* HarryPotterCharacters */ = {
+			isa = PBXGroup;
+			children = (
+				658C1E0F23D8FB450079B175 /* HarryPotterCharactersService.swift */,
+			);
+			path = HarryPotterCharacters;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,7 +228,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				658C1E0523D8F2EB0079B175 /* Character.swift in Sources */,
+				658C1E1023D8FB450079B175 /* HarryPotterCharactersService.swift in Sources */,
+				658C1E0723D8F3C90079B175 /* CharacterController.swift in Sources */,
 				658C1DEB23D8F1F90079B175 /* AppDelegate.swift in Sources */,
+				658C1E1223D8FB4F0079B175 /* URLSessionManager.swift in Sources */,
+				658C1E0C23D8F46F0079B175 /* JSONRepository.swift in Sources */,
+				658C1E1423D8FB5B0079B175 /* NetworkError.swift in Sources */,
+				658C1E0A23D8F4180079B175 /* CharacterStorage.swift in Sources */,
 				658C1DED23D8F1F90079B175 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
