@@ -19,6 +19,7 @@
 		658C1E1023D8FB450079B175 /* HarryPotterCharactersService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C1E0F23D8FB450079B175 /* HarryPotterCharactersService.swift */; };
 		658C1E1223D8FB4F0079B175 /* URLSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C1E1123D8FB4F0079B175 /* URLSessionManager.swift */; };
 		658C1E1423D8FB5B0079B175 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C1E1323D8FB5B0079B175 /* NetworkError.swift */; };
+		658C1E1623D9019D0079B175 /* OrderOfThePheonixTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 658C1E1523D9019D0079B175 /* OrderOfThePheonixTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		658C1E0F23D8FB450079B175 /* HarryPotterCharactersService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HarryPotterCharactersService.swift; sourceTree = "<group>"; };
 		658C1E1123D8FB4F0079B175 /* URLSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionManager.swift; sourceTree = "<group>"; };
 		658C1E1323D8FB5B0079B175 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		658C1E1523D9019D0079B175 /* OrderOfThePheonixTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderOfThePheonixTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 		658C1E0223D8F2100079B175 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				658C1E1523D9019D0079B175 /* OrderOfThePheonixTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -233,6 +236,7 @@
 				658C1E0723D8F3C90079B175 /* CharacterController.swift in Sources */,
 				658C1DEB23D8F1F90079B175 /* AppDelegate.swift in Sources */,
 				658C1E1223D8FB4F0079B175 /* URLSessionManager.swift in Sources */,
+				658C1E1623D9019D0079B175 /* OrderOfThePheonixTableViewController.swift in Sources */,
 				658C1E0C23D8F46F0079B175 /* JSONRepository.swift in Sources */,
 				658C1E1423D8FB5B0079B175 /* NetworkError.swift in Sources */,
 				658C1E0A23D8F4180079B175 /* CharacterStorage.swift in Sources */,

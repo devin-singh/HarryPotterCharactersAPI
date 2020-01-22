@@ -19,7 +19,7 @@ class TopLevelCharacterObject: Codable {
 class Character: Codable {
     let _id: String
     let name: String
-    let house: String
+    let house: String?
     let ministryOfMagic: Bool
     let orderOfThePhoenix: Bool
     let dumbledoresArmy: Bool

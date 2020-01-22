@@ -24,8 +24,8 @@ class HarryPoterCharactersService {
             switch result {
             case .success(let data):
                 do {
-                    let topLevelObj = try JSONDecoder().decode(TopLevelCharacterObject.self, from: data)
-                    completion(.success(topLevelObj.characters))
+                    let characters = try JSONDecoder().decode([Character].self, from: data)
+                    completion(.success(characters))
                 } catch {
                     print(error, error.localizedDescription)
                     completion(.failure(.thrownError(error)))

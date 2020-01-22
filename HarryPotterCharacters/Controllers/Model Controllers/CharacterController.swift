@@ -20,7 +20,7 @@ class CharacterController {
         HarryPoterCharactersService.fetchHarryPotterCharacters { (result) in
             switch result {
             case .success(let characterArray):
-                CharacterController.shared.characters = characterArray
+                CharacterController.shared.characters = characterArray as [Character]
             case .failure(let error):
                 print(error, error.localizedDescription)
                 fatalError()
@@ -28,7 +28,7 @@ class CharacterController {
         }
     }
     
-    static func onlyMinistryOfMagic() -> [Character] {
+    func onlyMinistryOfMagic() -> [Character] {
         var ministryChars = CharacterController.shared.characters
         for character in ministryChars {
             if !character.ministryOfMagic {
@@ -40,7 +40,7 @@ class CharacterController {
         return ministryChars
     }
     
-    static func onlyOrderOfPhoenix() -> [Character] {
+    func onlyOrderOfPhoenix() -> [Character] {
         var orderOfPhoenixChars = CharacterController.shared.characters
         for character in orderOfPhoenixChars {
             if !character.orderOfThePhoenix{
@@ -49,10 +49,11 @@ class CharacterController {
                 }
             }
         }
+        
         return orderOfPhoenixChars
     }
     
-    static func onlyDumbledoresArmy() -> [Character] {
+    func onlyDumbledoresArmy() -> [Character] {
         var onlyDumbledoresArmyChars = CharacterController.shared.characters
         for character in onlyDumbledoresArmyChars {
             if !character.dumbledoresArmy {
@@ -64,7 +65,7 @@ class CharacterController {
         return onlyDumbledoresArmyChars
     }
     
-    static func onlyDeathEater() -> [Character] {
+    func onlyDeathEater() -> [Character] {
         var onlyDeathEaterChars = CharacterController.shared.characters
         for character in onlyDeathEaterChars {
             if !character.deathEater {
