@@ -20,7 +20,7 @@ class CharacterController {
         HarryPoterCharactersService.fetchHarryPotterCharacters { (result) in
             switch result {
             case .success(let characterArray):
-                CharacterController.shared.characters = characterArray as [Character]
+                CharacterController.shared.characters = characterArray
             case .failure(let error):
                 print(error, error.localizedDescription)
                 fatalError()

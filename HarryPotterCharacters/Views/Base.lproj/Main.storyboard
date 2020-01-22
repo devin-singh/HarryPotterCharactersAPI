@@ -6,10 +6,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Static Groups Table View Controller-->
         <scene sceneID="opM-Wm-Qd7">
             <objects>
-                <tableViewController id="66Y-21-JGz" sceneMemberID="viewController">
+                <tableViewController id="66Y-21-JGz" customClass="StaticGroupsTableViewController" customModule="HarryPotterCharacters" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="5Ho-N9-E7N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -34,14 +34,14 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="y8A-9S-J5Y" kind="show" id="2Jk-R8-TI2"/>
+                                            <segue destination="y8A-9S-J5Y" kind="show" identifier="toPhoenix" id="2Jk-R8-TI2"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
                             <tableViewSection headerTitle="Dumbledores Army" id="nZm-Fo-rzC">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="FU3-eb-dCv" style="IBUITableViewCellStyleDefault" id="5kL-eB-bsZ">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dumbleDoreCell" textLabel="FU3-eb-dCv" style="IBUITableViewCellStyleDefault" id="5kL-eB-bsZ">
                                         <rect key="frame" x="0.0" y="155" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5kL-eB-bsZ" id="nxe-hj-Hwp">
@@ -58,7 +58,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="hbm-IU-QLo" kind="show" id="Zul-55-1p5"/>
+                                            <segue destination="hbm-IU-QLo" kind="show" identifier="toDumbledoreVC" id="Zul-55-1p5"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -82,7 +82,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="fwh-S4-uBi" kind="show" id="Fgz-b1-H9S"/>
+                                            <segue destination="fwh-S4-uBi" kind="show" identifier="toDeathEaterVC" id="Fgz-b1-H9S"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -132,7 +132,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="K3c-Gy-cY7" detailTextLabel="sSU-vE-QeR" style="IBUITableViewCellStyleValue1" id="b9m-VH-JlX">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="orderOfPhoenix" textLabel="K3c-Gy-cY7" detailTextLabel="sSU-vE-QeR" style="IBUITableViewCellStyleValue1" id="b9m-VH-JlX">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b9m-VH-JlX" id="CKT-7K-Nan">
@@ -166,7 +166,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ibX-p8-WFC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2354" y="269"/>
+            <point key="canvasLocation" x="2261" y="-344"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="FTe-0x-OV7">
@@ -186,16 +186,16 @@
             </objects>
             <point key="canvasLocation" x="356.52173913043481" y="-98.4375"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Ministry Of Magic Table View Controller-->
         <scene sceneID="Rns-Zr-0my">
             <objects>
-                <tableViewController id="HLa-sh-090" sceneMemberID="viewController">
+                <tableViewController id="HLa-sh-090" customClass="MinistryOfMagicTableViewController" customModule="HarryPotterCharacters" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="n1X-Uc-wvZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="UBP-tk-gaQ" detailTextLabel="xWX-lf-pae" style="IBUITableViewCellStyleValue1" id="nzv-bj-dgX">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ministryCell" textLabel="UBP-tk-gaQ" detailTextLabel="xWX-lf-pae" style="IBUITableViewCellStyleValue1" id="nzv-bj-dgX">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nzv-bj-dgX" id="Mkr-dC-tEy">
@@ -231,16 +231,16 @@
             </objects>
             <point key="canvasLocation" x="1616" y="761"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Dumbledores Army Table View Controller-->
         <scene sceneID="MoY-oh-Z9d">
             <objects>
-                <tableViewController id="hbm-IU-QLo" sceneMemberID="viewController">
+                <tableViewController id="hbm-IU-QLo" customClass="DumbledoresArmyTableViewController" customModule="HarryPotterCharacters" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="hYG-xQ-Fan">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="Wrr-cF-hlb" detailTextLabel="y2n-eO-6HU" style="IBUITableViewCellStyleValue1" id="7oo-Df-qxp">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="dumbleDoreCell" textLabel="Wrr-cF-hlb" detailTextLabel="y2n-eO-6HU" style="IBUITableViewCellStyleValue1" id="7oo-Df-qxp">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="7oo-Df-qxp" id="d0u-HO-Hrr">
@@ -274,18 +274,18 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eGl-YG-GZU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2371" y="-418"/>
+            <point key="canvasLocation" x="2286" y="296"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Death Eaters Table View Controller-->
         <scene sceneID="M5t-Oi-iq1">
             <objects>
-                <tableViewController id="fwh-S4-uBi" sceneMemberID="viewController">
+                <tableViewController id="fwh-S4-uBi" customClass="DeathEatersTableViewController" customModule="HarryPotterCharacters" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="9Mg-me-O9n">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="CCZ-OE-mu2" detailTextLabel="yGP-4Q-gPd" style="IBUITableViewCellStyleValue1" id="MJS-9h-hjJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="deathEatersCell" textLabel="CCZ-OE-mu2" detailTextLabel="yGP-4Q-gPd" style="IBUITableViewCellStyleValue1" id="MJS-9h-hjJ">
                                 <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="MJS-9h-hjJ" id="D69-mW-AwW">
@@ -319,7 +319,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XJN-AQ-fkE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1665" y="-887"/>
+            <point key="canvasLocation" x="1029" y="-956"/>
         </scene>
     </scenes>
 </document>

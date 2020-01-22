@@ -17,9 +17,6 @@ class URLSessionManager {
                 return completion(.failure(.thrownError(error)))
             }
             guard let data = data else { return completion(.failure(.noDataFound)) }
-            
-            let prettyPrinted = String(data: data, encoding: .utf8)
-            print(prettyPrinted)
             completion(.success(data))
             
         }.resume()
