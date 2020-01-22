@@ -42,6 +42,11 @@ class StaticGroupsTableViewController: UITableViewController {
             
             let charactersToSend = CharacterController.shared.onlyDeathEater()
             destinationVC.deathEaters = charactersToSend
+        } else if segue.identifier == "toMinistryVC" {
+            guard let destinationVC = segue.destination as? MinistryOfMagicTableViewController else { return }
+            
+            let charactersToSend = CharacterController.shared.onlyMinistryOfMagic()
+            destinationVC.ministryOfMagic = charactersToSend
         }
     }
 }

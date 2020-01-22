@@ -106,7 +106,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="HLa-sh-090" kind="show" id="E6G-xI-jah"/>
+                                            <segue destination="HLa-sh-090" kind="show" identifier="toMinistryVC" id="E6G-xI-jah"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
